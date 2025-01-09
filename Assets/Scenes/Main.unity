@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 268019264}
   - component: {fileID: 268019263}
   - component: {fileID: 268019262}
+  - component: {fileID: 268019266}
   m_Layer: 0
   m_Name: Buildings
   m_TagString: Untagged
@@ -222,12 +223,26 @@ Transform:
   m_GameObject: {fileID: 268019261}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0446, y: -1.6258, z: 90}
+  m_LocalPosition: {x: 0.0446, y: -1.09, z: 90}
   m_LocalScale: {x: 28.142769, y: 6.8316703, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &268019266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268019261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d794e03f7045b404d80054c19cf5cf66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeed: 0.2
+  meshRenderer: {fileID: 268019263}
 --- !u!1 &350265930
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,6 +255,7 @@ GameObject:
   - component: {fileID: 350265933}
   - component: {fileID: 350265932}
   - component: {fileID: 350265931}
+  - component: {fileID: 350265935}
   m_Layer: 0
   m_Name: Platform
   m_TagString: Untagged
@@ -337,6 +353,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &350265935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350265930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d794e03f7045b404d80054c19cf5cf66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeed: 0.8
+  meshRenderer: {fileID: 350265932}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,6 +600,7 @@ GameObject:
   - component: {fileID: 1025061399}
   - component: {fileID: 1025061398}
   - component: {fileID: 1025061397}
+  - component: {fileID: 1025061401}
   m_Layer: 0
   m_Name: Sky
   m_TagString: Untagged
@@ -661,12 +692,26 @@ Transform:
   m_GameObject: {fileID: 1025061396}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0446, y: 2.5983, z: 100}
+  m_LocalPosition: {x: 0.0446, y: 2.2, z: 100}
   m_LocalScale: {x: 28.142769, y: 5.803322, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1025061401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025061396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d794e03f7045b404d80054c19cf5cf66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollSpeed: 0.1
+  meshRenderer: {fileID: 1025061398}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
