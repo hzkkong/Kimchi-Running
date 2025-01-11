@@ -9,9 +9,14 @@ public class Spawner : MonoBehaviour
     [Header("References")]
     public GameObject[] gameObjects;
     
-    void Start()
+    void OnEnable()
     {
         Invoke("Spawn", Random.Range(minSpawnDelay, maxSpawnDelay));
+    }
+
+    void OnDisable()
+    {
+        CancelInvoke();
     }
 
     void Spawn()

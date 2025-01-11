@@ -14,7 +14,6 @@ public class Player : MonoBehaviour
     // 땅에서 시작 -> true
     private bool isGrounded = true;
 
-    public int lives = 3;
     public bool isInvincible = false;
 
     void Start()
@@ -39,7 +38,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    void KillPlayer()
+    public void KillPlayer()
     {
         // 애니메이션 멈추기
         PlayerAnimator.enabled = false;
@@ -51,8 +50,8 @@ public class Player : MonoBehaviour
 
     void Hit()
     {
-        lives -= 1;
-        if(lives == 0)
+        GameManager.Instance.Lives -= 1;
+        if(GameManager.Instance.Lives == 0)
         {
             KillPlayer();
         }
@@ -61,7 +60,7 @@ public class Player : MonoBehaviour
     void Heal()
     {
         // 3보다 커져도 항상 최소값 3을 반환한다
-        lives = Mathf.Min(3, lives + 1);
+        GameManager.Instance.Lives = Mathf.Min(3, GameManager.Instance.Lives + 1);
     }
 
     void StartInvincible()
