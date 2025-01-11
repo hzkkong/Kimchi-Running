@@ -3,7 +3,7 @@ using UnityEngine;
 public class Mover : MonoBehaviour
 {
     [Header("Settings")]
-    public float moveSpeed = 1f;
+    public float moveSpeed = 1f ;
 
     void Start()
     {
@@ -12,6 +12,6 @@ public class Mover : MonoBehaviour
 
     void Update()
     {
-        transform.position += Vector3.left * moveSpeed * Time.deltaTime;
+        transform.position += Vector3.left * GameManager.Instance.CalculateGameSpeed() * Time.deltaTime;
     }
 }

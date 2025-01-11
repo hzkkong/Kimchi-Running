@@ -16,6 +16,7 @@ public class BackGroundScroll : MonoBehaviour
 
     void Update()
     {
-        meshRenderer.material.mainTextureOffset += new Vector2(scrollSpeed * Time.deltaTime, 0);
+        // platform 가로 길이 20 -> offset / 20
+        meshRenderer.material.mainTextureOffset += new Vector2(scrollSpeed * GameManager.Instance.CalculateGameSpeed() / 20 * Time.deltaTime, 0);
     }
 }
