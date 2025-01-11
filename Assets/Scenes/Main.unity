@@ -592,6 +592,9 @@ MonoBehaviour:
   JumpForce: 12
   PlayerRigidBody: {fileID: 408943328}
   PlayerAnimator: {fileID: 408943325}
+  PlayerBoxCollider: {fileID: 408943329}
+  lives: 3
+  isInvincible: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
