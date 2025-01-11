@@ -107,6 +107,7 @@ public class GameManager : MonoBehaviour
             {
                 spawner[i].SetActive(false);
             }
+            SaveHighScore();
             // 플레이어 죽으면 죽음 UI 활성화 시켜주기
             DeadUI.SetActive(true);
             State = GameState.Dead;
