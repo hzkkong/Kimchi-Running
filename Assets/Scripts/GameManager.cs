@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
         if(State != GameState.Playing) return 5f;
 
         // 속도 늘려주기 (게임 시작하면 8 -> 30까지 늘어난다)
-        float speed = 8f + (0.5f * Mathf.Floor(CalculateScore() / 10f));
+        float speed = 10f + (0.5f * Mathf.Floor(CalculateScore() / 10f));
         // Maximum Speed
         return Mathf.Min(speed, 30f);
     }
